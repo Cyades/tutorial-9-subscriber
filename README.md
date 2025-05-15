@@ -15,3 +15,8 @@
    - **`localhost:5672`**:  
      - `localhost` menunjukkan bahwa server AMQP berjalan di mesin lokal (komputer Anda sendiri).  
      - `5672` adalah port default yang digunakan oleh server AMQP (seperti RabbitMQ) untuk menerima koneksi.
+
+
+### Reflection 2 (Simulating slow subcriber)
+![Screenshot of RabbitMQ chart showing slow subscriber](SlowSubscriber.png)
+- Pada grafik atas, terlihat adanya peningkatan jumlah pesan yang tersimpan di dalam queue. Hal ini disebabkan oleh *publisher* yang mengirimkan pesan lebih cepat dibandingkan kemampuan *subscriber* untuk memprosesnya. *Subscriber* sengaja diberi *delay* untuk mensimulasikan kondisi *subscriber* yang lambat. Akibatnya, pesan-pesan yang belum diproses akan ditampung sementara di dalam queue hingga *subscriber* memprosesnya satu per satu.
