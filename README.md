@@ -27,3 +27,8 @@
 
 ![Screenshot of RabbitMQ chart showing 3 slow subscribers](Chart.png)
 - Dengan bertambahnya jumlah *subscriber*, grafik *queued messages* yang sebelumnya mengalami lonjakan dalam waktu lama kini hanya menunjukkan kenaikan singkat. *Throughput* dari *consumer* pun menjadi lebih seimbang dengan *throughput* milik *producer*. Hal ini disebabkan karena jumlah *subscriber* yang lebih banyak memungkinkan pesan dari *publisher* diproses dengan lebih cepat. Walaupun setiap *consumer* memproses pesan dengan kecepatan yang lebih lambat, kehadiran 3 *consumer instance* membantu meningkatkan kemampuan pemrosesan pesan secara keseluruhan. Dampaknya, jumlah pesan yang menumpuk dalam *queue* menurun secara signifikan.
+
+## Modul 9 (Bonus)
+### Reflection 4 (Simulating slow subscriber - Cloud)
+![Simulating slow subscriber on cloud](SlowSubscriber_Cloud.png)
+- Sama seperti yang sebelumnya akan tetapi ada perbedaan pada instance yang digunakan yakni menggunakan *cloud* dan bukan *localhost*.
