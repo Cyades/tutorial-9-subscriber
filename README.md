@@ -32,3 +32,10 @@
 ### Reflection 4 (Simulating slow subscriber - Cloud)
 ![Simulating slow subscriber on cloud](SlowSubscriber_Cloud.png)
 - Sama seperti yang sebelumnya akan tetapi ada perbedaan pada instance yang digunakan yakni menggunakan *cloud* dan bukan *localhost*.
+
+### Reflection 5 (Running at least 3 subscribers - Cloud)
+![Running 3 subscribers and 1 publisher on cloud RabbitMQ](ManySubscribers_Cloud.png)
+- Sama seperti yang sebelumnya akan tetapi ada perbedaan pada instance yang digunakan yakni menggunakan *cloud* dan bukan *localhost*.
+
+![Screenshot of RabbitMQ chart showing 3 slow subscribers](Chart_Cloud.png)
+- Sama seperti yang sebelumnya akan tetapi ada perbedaan pada instance yang digunakan yakni menggunakan *cloud* dan bukan *localhost*.
